@@ -1,31 +1,13 @@
 // App.js
 import React from "react";
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <div>
-      <header id="header" className="section-header scroll">
-        <a href="./">
-          <img
-            alt=""
-            className="icon"
-            src="https://learntocodetogether.nl/assets/icon.svg"
-          />
-        </a>
-        <a href="https://www.meetup.com/Learning-to-Code-Amsterdam/">
-          <img
-            alt=""
-            className="meetup-icon"
-            src="https://learntocodetogether.nl/assets/meetup-icon.svg"
-          />
-        </a>
-        <nav>
-          <a href="/courses.html">Our Courses</a>
-        </nav>
-      </header>
-
-      <div className="section-header-spacer"></div>
+      <Header />
 
       <div className="content">
         <div className="section section-what-usp">
@@ -198,24 +180,7 @@ export default function App() {
         <div className="line "></div>
       </div>
 
-      <div className="section-footer">
-        <img
-          alt=""
-          className="logo"
-          src="https://learntocodetogether.nl/assets/logo.svg"
-        />
-        <div className="title">Created by</div>
-        <div className="subtitle">
-          Rein Op &#x27;t land &amp; Danny van der Jagt
-        </div>
-        <div className="team-container">
-          <img
-            alt=""
-            className="team"
-            src="https://learntocodetogether.nl/assets/danny&rein.svg"
-          />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
